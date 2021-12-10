@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Roboto', Verdana;
+    letter-spacing: 1.5px;
+}
+
+body {
+    background-color: #F2F2F2;
+    margin-left: 415px;
+    margin-top: 140px;
+}
+
+@media only screen and (max-width: 1080px) {
+    body {
+        margin-left: 280px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        margin-left: 15px;
+    }
+}
+
+:root {
+    --white: #FFF;
+    --grey: #8D8D8D;
+    --black: #222222;
+    --red: #F54241;
+    --green: #00E899;
+    --blue: #4166F5;
+    --yellow: #FBD410;
+    --purple: #9966FF;
+}

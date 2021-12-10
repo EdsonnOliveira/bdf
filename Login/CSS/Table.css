@@ -1,0 +1,337 @@
+/* FILTER TABLE */
+.filterTable {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.filterTable > div {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filterTable > div:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.filterTable > div:last-child {
+    margin-right: 0;
+}
+
+.filterTable > div > h1 {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterTable > div > h1 > a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.filterTable > div > aside {
+    height: 25px;
+    padding: 0 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.filterTable > div > aside.blue {
+    background-color: var(--blue);
+    box-shadow: 0px 0px 7px 0px var(--blue);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--blue);
+    -moz-box-shadow: 0px 0px 7px 0px var(--blue);
+}
+
+.filterTable > div > aside.green {
+    background-color: var(--green);
+    box-shadow: 0px 0px 7px 0px var(--green);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--green);
+    -moz-box-shadow: 0px 0px 7px 0px var(--green);
+}
+
+.filterTable > div > aside.yellow {
+    background-color: var(--yellow);
+    box-shadow: 0px 0px 7px 0px var(--yellow);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--yellow);
+    -moz-box-shadow: 0px 0px 7px 0px var(--yellow);
+}
+
+.filterTable > div > aside.red {
+    background-color: var(--red);
+    box-shadow: 0px 0px 7px 0px var(--red);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--red);
+    -moz-box-shadow: 0px 0px 7px 0px var(--red);
+}
+
+.filterTable > div > aside > h2 {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* TABLE PERSONALIZED */
+.tablePersonalized {
+    width: calc(100% - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tablePersonalized.center {
+    justify-content: center;
+}
+
+.tablePersonalized article {
+    width: max-content;
+    height: 90px;
+    background-color: var(--white);
+    -webkit-box-shadow: 0px 0px 13px 0px rgb(82 63 105 / 13%);
+    -moz-box-shadow: 0px 0px 13px 0px rgb(82 63 105 / 13%);
+    box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 13%);
+    border-radius: 26px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tablePersonalized article:last-child {
+    margin: 0;
+}
+
+.tablePersonalized article[onclick] {
+    cursor: pointer;
+}
+
+.tablePersonalized article.itemsCenter {
+    justify-content: center;
+}
+
+.tablePersonalized article.itemsBetween {
+    justify-content: space-between;
+}
+
+.tablePersonalized article > .info {
+    border-left: 3px solid #D5D5D5;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.tablePersonalized article > .info > h3 {
+    font-size: 12px;
+}
+
+.tablePersonalized article > .info > h1 {
+    font-size: 28px;
+}
+
+.tablePersonalized article > .info > h2 {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.tablePersonalized article > .info > h2 > img {
+    width: 17px;
+    margin-right: 5px;
+}
+
+.tablePersonalized article > span {
+    text-align: center;
+    margin: 0 60px;
+}
+
+.tablePersonalized article > span > h1 {
+    font-size: 26px;
+}
+
+.tablePersonalized article > span > h2 {
+    font-size: 12px;
+}
+
+.tablePersonalized article > .situation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tablePersonalized article > .situation > span {
+    width: 170px;
+    height: 37px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablePersonalized article > .situation > span.blue {
+    background-color: var(--blue);
+    box-shadow: 0px 0px 7px 0px var(--blue);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--blue);
+    -moz-box-shadow: 0px 0px 7px 0px var(--blue);
+}
+
+.tablePersonalized article > .situation > span.green {
+    background-color: var(--green);
+    box-shadow: 0px 0px 7px 0px var(--green);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--green);
+    -moz-box-shadow: 0px 0px 7px 0px var(--green);
+}
+
+.tablePersonalized article > .situation > span.purple {
+    background-color: var(--purple);
+    box-shadow: 0px 0px 7px 0px var(--purple);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--purple);
+    -moz-box-shadow: 0px 0px 7px 0px var(--purple);
+}
+
+.tablePersonalized article > .situation > span.yellow {
+    background-color: var(--yellow);
+    box-shadow: 0px 0px 7px 0px var(--yellow);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--yellow);
+    -moz-box-shadow: 0px 0px 7px 0px var(--yellow);
+}
+
+.tablePersonalized article > .situation > span.red {
+    background-color: var(--red);
+    box-shadow: 0px 0px 7px 0px var(--red);
+    -webkit-box-shadow: 0px 0px 7px 0px var(--red);
+    -moz-box-shadow: 0px 0px 7px 0px var(--red);
+}
+
+.table > article > .situation > span > h1 {
+    font-size: 19px;
+}
+
+.tablePersonalized > .expansive {
+    width: max-content;
+    height: max-content;
+}
+
+.tablePersonalized > .expansive > .title {
+    font-size: 27px;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    .tablePersonalized article > .info {
+        padding: 0 0 0 10px;
+    }
+
+    .tablePersonalized article > .info > h3 {
+        font-size: 10px;
+    }
+    
+    .tablePersonalized article > .info > h1 {
+        font-size: 25px;
+    }
+    
+    .tablePersonalized article > .info > h2 {
+        font-size: 10px;
+    }
+
+    .tablePersonalized article > span {
+        margin: 0 30px;
+    }
+
+    .tablePersonalized article > span > h1 {
+        font-size: 23px;
+    }
+    
+    .tablePersonalized article > span > h2 {
+        font-size: 10px;
+    }
+
+    .tablePersonalized article > .situation > span {
+        width: 100px;
+    }
+
+    .tablePersonalized > article > .situation > span > h1 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tablePersonalized article {
+        width: calc(100% - 40px);
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .tablePersonalized article > .info {
+        width: 100%;
+        height: max-content;
+        padding: 0;
+        border: 0;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .tablePersonalized article > .info > h3 {
+        font-size: 12px;
+    }
+    
+    .tablePersonalized article > .info > h1 {
+        font-size: 28px;
+    }
+    
+    .tablePersonalized article > .info > h2 {
+        font-size: 12px;
+    }
+
+    .tablePersonalized article > span {
+        margin: 10px 0;
+    }
+
+    .tablePersonalized article > span > h1 {
+        font-size: 30px;
+    }
+    
+    .tablePersonalized article > span > h2 {
+        font-size: 14px;
+    }
+
+    .tablePersonalized article > .situation {
+        margin-top: 15px;
+    }
+
+    .tablePersonalized article > .situation > span {
+        width: 170px;
+    }
+
+    .tablePersonalized > article > .situation > span > h1 {
+        font-size: 17px;
+    }
+
+    .tablePersonalized > .expansive {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

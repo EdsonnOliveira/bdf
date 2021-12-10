@@ -1,0 +1,252 @@
+/* PREVIEW */
+.preview > .center > h4 {
+    font-size: 37px;
+}
+
+.preview > .center > h1 {
+    font-size: 142px;
+}
+
+@media only screen and (max-width: 900px) {
+    .preview > .center > h4 {
+        font-size: 30px;
+    }
+
+    .preview > .center > h1 {
+        font-size: 90px;
+    }
+}
+
+/* ALERTS */
+#alerts {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#alerts > article {
+    width: 300px;
+    height: 220px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+#alerts > article > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #alerts {
+        height: 1050px;
+        flex-direction: column;
+    }
+}
+
+/* VIDEO WELCOME */
+#videoWelcome {
+    width: 100%;
+    height: 576px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#videoWelcome > img {
+    width: 80%;
+    height: 100%;
+    border-radius: 38px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #videoWelcome {
+        height: 500px;
+    }
+
+    #videoWelcome > img {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #videoWelcome {
+        height: 300px;
+    }
+
+    #videoWelcome > img {
+        width: 80%;
+        border-radius: 28px;
+    }
+}
+
+/* ROW PHOTOS */
+#rowPhotos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2fr, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#rowPhotos > img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #rowPhotos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #rowPhotos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #rowPhotos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    }
+}
+
+/* MISSION */
+#mission {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#mission > h2 {
+    width: 80%;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#mission > a {
+    font-size: 20px;
+}
+
+/* MINISTRY */
+#ministry {
+    width: 100%;
+    height: 500px;
+    background-image: url('../IMG/BG/ministry.jpg');
+    background-size: 100% 100%;
+    justify-content: center;
+}
+
+#ministry > div {
+    width: 40%;
+    margin-left: 100px;
+}
+
+#ministry > div > h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#ministry > div > h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+    #ministry > div {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* MENSAGE */
+#mensage {
+    width: 100%;
+    margin-bottom:100px;
+}
+
+#mensage > div {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#mensage > div > a {
+    font-size: 20px;
+}
+
+#mensage > div:first-child {
+    margin-bottom: 50px;
+}
+
+#mensage > div > article {
+    width: 330px;
+    height: 220px;
+    margin: 0 15px;
+}
+
+#mensage > div > article > img {
+    width: 100%;
+    height: 170px;
+}
+
+#mensage > div > article > div {
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mensage > div > article > div > div {
+    width: max-content;
+    height: 100%;
+    justify-content: center;
+}
+
+#mensage > div > article > div > div > h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#mensage > div > article > div > div > h2 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#mensage > div > article > div > div > a {
+    font-size: 14px;
+}
+
+#mensage > div > article > div > div > a > img {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .txtTitle[subText='Mensagens'] {
+        font-size: 48px;
+    }
+
+    .txtTitle[subText='Mensagens']::before {
+        font-size: 30px;
+    }
+
+    #mensage > div {
+        flex-direction: column;
+    }
+
+    #mensage > div > article {
+        margin: 15px 0;
+    }
+}

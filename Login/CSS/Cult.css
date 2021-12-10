@@ -1,0 +1,32 @@
+
+.tablePersonalized > .expansive > article {
+    width: 600px;
+}
+
+.tablePersonalized > .expansive > article > .situation {
+    width: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+    .tablePersonalized > .expansive > article {
+        width: calc(100% - 100px);
+    }
+
+    .tablePersonalized > .expansive > .title {
+        width: calc(100% - 20px);
+    }
+
+    .tablePersonalized > .expansive > .itemsBetween > .info > h1 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .tablePersonalized > .expansive > .itemsBetween > .info > h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .tablePersonalized > .expansive > .itemsBetween > .situation {
+        margin-top: 3px;
+    }
+}

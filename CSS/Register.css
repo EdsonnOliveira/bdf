@@ -1,0 +1,222 @@
+body {
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+/* TYPE */
+section.type {
+    flex-direction: row;
+}
+
+div.type {
+    width: 240px;
+    height: 240px;
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.07);
+    /* -webkit-box-shadow: 0px 0px 7px 0px var(--black); */
+    /* -moz-box-shadow: 0px 0px 7px 0px var(--black); */
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+div.type:last-child {
+    margin-right: 0;
+}
+
+div.type:hover {
+    opacity: 0.5;
+}
+
+div.type > img{
+    width: 80px;
+    margin-top: 50px;
+}
+
+div.type > h1 {
+    height: 50px;
+    color: var(--black);
+    font-size: 27px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 800px) {
+    section.type {
+        flex-direction: column;
+    }
+
+    div.type {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    div.type:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+form {
+    width: 400px;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+form > h1 {
+    font-size: 57px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--black);
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+form > h3 {
+    font-size: 20px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+form > a > img[alt='Logo'] {
+    width: 93px;
+    margin: 0 auto;
+}
+
+form > label {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form > label[for=''] {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form > label > h1,
+form > label > div > h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+form > label > input:not(input[type='submit']),
+form > label > div > input {
+    width: calc(100% - 24px);
+    padding: 5px 10px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--black)
+}
+
+form > label > select,
+form > label > div > select {
+    width: 100%;
+    padding: 8px 10px;
+    height: 54px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--black);
+}
+
+form > label > div {
+    width: calc(50% - 10px);
+}
+
+form > input[type='submit'] {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+form > a {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--black)
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    form > h1 {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    form > h3 {
+        width: calc(100% - 100px);
+        margin-top: 0;
+    }
+
+    form > a > img[alt='Logo'] {
+        width: 73px;
+    }
+
+    form > label {
+        width: calc(100% - 100px);
+    }
+
+    form > label > div > h1 {
+        font-size: 21px;
+    }
+
+    form > label > div > input {
+        font-size: 18px;
+    }
+}
+
+/* SUCCESS */
+#bodySuccess > a:first-child {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px
+}
+
+#bodySuccess > a > img[alt='Logo'] {
+    width: 93px;
+}
+
+#success {
+    align-items: center;
+    justify-content: center;
+}
+
+#success > img {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+#success > h1 {
+    font-size: 37px;
+    margin-bottom: 50px;
+}
+
+#success > a {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 900px) {
+    #success > img {
+        width: 106px;
+    }
+
+    #success > h1 {
+        font-size: 27px;
+    }
+}

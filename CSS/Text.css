@@ -1,0 +1,105 @@
+/* FONTS */
+.txtCourgette {
+    font-family: 'Courgette';
+}
+
+.txtPoppins {
+    font-family: 'Poppins';
+}
+
+/* COLOR */
+.txtBlack {
+    color: var(--black)
+}
+
+.txtWhite {
+    color: var(--white);
+}
+
+.txtGreen {
+    color: var(--green);
+}
+
+.txtRed {
+    color: var(--red);
+}
+
+.txtGrey {
+    color: var(--grey);
+}
+
+/* WEIGHT */
+.txt100 {
+    font-weight: 100;
+}
+
+.txt200 {
+    font-weight: 200;
+}
+
+.txt300 {
+    font-weight: 300;
+}
+
+.txt400 {
+    font-weight: 400;
+}
+
+.txt500 {
+    font-weight: 500;
+}
+
+.txt700 {
+    font-weight: 700;
+}
+
+/* POSITION */
+.txtLeft {
+    text-align: left;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+/* STYLE */
+.txtUpper {
+    text-transform: uppercase;
+}
+
+.txtNoDecoration {
+    text-decoration: none;
+}
+
+/* TYPE */
+.txtTitle {
+    height: 200px;
+    font-size: 81px;
+    text-shadow: 0 0 1px var(--black);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+.txtTitle::before {
+    content: attr(subtext);
+    position: absolute;
+    font-size: 49px;
+    color: var(--black);
+    text-transform: initial;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .txtTitle {
+        font-size: 61px;
+    }
+
+    .txtTitle::before {
+        font-size: 39px;
+    }
+}

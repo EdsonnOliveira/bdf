@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    align-items: center;
+}
+
+form {
+    width: 400px;
+    margin-top: 70px;
+}
+
+form > h1 {
+    font-size: 57px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--black);
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+form > a > img[alt='Logo'] {
+    width: 93px;
+    margin: 0 auto;
+}
+
+form > label {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form > label[for=''] {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form > label > h1,
+form > label > div > h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+form > label > input:not(input[type='submit']),
+form > label > div > input {
+    width: calc(100% - 24px);
+    padding: 5px 10px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--black)
+}
+
+form > label > select,
+form > label > div > select {
+    width: 100%;
+    padding: 8px 10px;
+    height: 54px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--black);
+}
+
+form > label > div {
+    width: calc(50% - 10px);
+}
+
+form > input[type='submit'] {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+form > a {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--black)
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: calc(100% - 80px);
+        margin-top: 20px;
+    }
+
+    form > h1 {
+        font-size: 47px;
+        margin-bottom: 30px;
+    }
+}
